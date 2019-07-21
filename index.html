@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title>Digital Market</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<h1 class="page-title" hidden></h1>
+<header class="page-panel page-panel_header">
+    <div class="header-header">
+        <ul class="service-buttons">
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/login.svg #login"></use>
+                    </svg>
+                    Вход
+                </a>
+            </li>
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/heart.svg #heart"></use>
+                    </svg>
+                    Избранное
+                </a>
+            </li>
+            <li class="service-buttons__list">
+                <a class="service-buttons__link">
+                    <svg class="service-buttons__icon" role="presentation">
+                        <use xlink:href="img/compare.svg #compare"></use>
+                    </svg>
+                    Сравнение
+                </a>
+            </li>
+        </ul>
+        <ul class="social-links">
+            <!--картинки соц.сетей будут фоновыми-->
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="vk">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/vk.svg #vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="facebook">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/facebook.svg #facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social-links__list">
+                <a href="#" class="social-links__link" title="twitter">
+                    <svg class="social-links__icon" role="presentation">
+                        <use xlink:href="img/twitter.svg #twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-content">
+        <a href="/" class="page-panel__logo-link">
+            <svg class="page-panel__logo" role="presentation">
+                <use xlink:href="img/Logo.svg #Logo"></use>
+            </svg>
+        </a>
+        <div class="header-center">
+            <ul class="contacts-block">
+                <li class="contacts-block__list">
+                    <a href="tel:+88006845594" class="contacts-block__link">8 (800) 684-55-94</a>
+                </li>
+                <li class="contacts-block__list">
+                    <a href="mailto:info@nalabuten.ah" class="contacts-block__link">info@nalabuten.ah</a>
+                </li>
+            </ul>
+            <form action="base.php" class="search-block">
+                <input type="search" class="search-block__input-line" placeholder="Введите поисковую фразу">
+                <button class="search-block__search-button" title="Найти"></button>
+            </form>
+        </div>
+        <div class="total-block">
+            <output class="total-block__total-price">7500р.</output>
+            <a href="#" class="total-block__buy-bottom" title="Перейти в корзину"></a>
+        </div>
+    </div>
+</header>
+<nav class="page-nav">
+    <ul class="page-nav__page-menu">
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Главная</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Каталог</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Галерея</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Акция</a>
+        </li>
+        <li class="page-nav__menu-list">
+            <a href="#" class="page-nav__menu-item">Контакты</a>
+        </li>
+    </ul>
+</nav>
+<!--<main class="main">-->
+<!--    <div class="owel-carousel">-->
+<!--        <ul class="owel-carousel__collection-list">-->
+<!--            <li class="owel-carousel__item">-->
+<!--                <img src="img/main-pic.png" alt="Главные туфли" class="owel-carousel__item-pic">-->
+<!--                <p class="owel-carousel__item-title">Labuten Cherry</p>-->
+<!--                <p class="owel-carousel__secondary-title">НОВАЯ ВЕСЕННЯЯ КОЛЕКЦИЯ</p>-->
+<!--                <p class="owel-carousel__item-info">Мы рады представить вам новую колекцию туфель от знаменитого дизайнера модельера Кристиана</p>-->
+<!--                <button class="owel-carousel__buy-now-button">КУПИТЬ СЕЙЧАС</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--    <div class="proposes">-->
+<!--        <div class="sales">-->
+<!--            <p class="propose-title">ПРОДАЖА</p>-->
+<!--            <p class="propose-info">Шорокий асортимент моделей</p>-->
+<!--        </div>-->
+<!--        <div class="discounts">-->
+<!--            <p class="propose-title">СКИДКИ</p>-->
+<!--            <p class="propose-info">Невообразимо низкие цены</p>-->
+<!--        </div>-->
+<!--        <div class="rates">-->
+<!--            <p class="propose-title">АКЦИИ</p>-->
+<!--            <p class="propose-info">Широкий асортимент моделей</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="goods">-->
+<!--        <section class="goods-block">-->
+<!--            <h2 class="goods-block__block-title">НОВИНКИ</h2>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">-->
+<!--                &lt;!&ndash;Лейблы зададим псевдоклассами, а их содержание атрибутами data-label&ndash;&gt;-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_new-lable" data-label="new">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--        </section>-->
+<!--        <section class="goods-block">-->
+<!--            <h2 class="goods-block__block-title">ТОВАРЫ СО СКИДКОЙ</h2>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">-->
+<!--                &lt;!&ndash;модификатор _discount-label изменит цвет лейбла&ndash;&gt;-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <sup class="goods-block__second-price-block">-->
+<!--                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>-->
+<!--                </sup>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <sup class="goods-block__second-price-block">-->
+<!--                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>-->
+<!--                </sup>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <sup class="goods-block__second-price-block">-->
+<!--                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>-->
+<!--                </sup>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--            <figure class="goods-block__item-block goods-block__item-block_discount-label" data-label="-10%">-->
+<!--                <img src="img/shoes-item.png" alt="Туфли" class="goods-block__item-image">-->
+<!--                <figcaption class="goods-block__item-name">Labuten-lady</figcaption>-->
+<!--                <sup class="goods-block__second-price-block">-->
+<!--                    <s class="goods-block__second-price goods-block__second-price_old-price">42700р.</s>-->
+<!--                </sup>-->
+<!--                <p class="goods-block__item-price">35000р.</p>-->
+<!--                <button class="goods-block__buy-button">в корзину</button>-->
+<!--                <button class="goods-block__favorite-button" title="Добавить в избранное"></button>-->
+<!--            </figure>-->
+<!--        </section>-->
+<!--    </div>-->
+<!--</main>-->
+<!--<aside class="page-aside">-->
+<!--    <h2 class="page-aside__aside-title">Категории</h2>-->
+<!--    <ul class="page-aside__aside-menu">-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Вечерние</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Свадебные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Бальные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Повседневные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Особенные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Обыкновенные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Оригинальные</a>-->
+<!--        </li>-->
+<!--        <li class="page-aside__aside__list">-->
+<!--            <a href="#" class="page-aside__aside-item">Космические</a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</aside>-->
+<!--<a href="#" class="page-advertising">-->
+<!--    <img src="img/adv-1.png" alt="Реклама" class="advertising-pic">-->
+<!--</a>-->
+<!--<a href="#" class="page-advertising">-->
+<!--    <img src="img/adv-2.png" alt="Реклама" class="advertising-pic">-->
+<!--</a>-->
+<!--<footer class="page-panel page-panel_footer">-->
+<!--    <a href="" class="page-panel__logo-link">-->
+<!--        <img src="img/footer-logo.png" alt="logo" class="page-panel__logo">-->
+<!--    </a>-->
+<!--    <div class="page-panel__menu-container">-->
+<!--        <div class="page-panel__menu-title">Меню</div>-->
+<!--        <ul class="page-panel__menu">-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Главная</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Каталог</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Галерея</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Акции</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Контакты</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="page-panel__menu-container">-->
+<!--        <div class="page-panel__menu-title">Способы оплаты</div>-->
+<!--        <ul class="page-panel__menu">-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Наличными</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">Visa или MasterCard</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="#" class="page-panel__menu-item">В кредит</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="page-panel__menu-container">-->
+<!--        <div class="page-panel__menu-title">Контактная информация</div>-->
+<!--        <ul class="page-panel__menu">-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="tel:+84996549879" class="page-panel__menu-item">Телефон: 8(499)654-98-79</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <a href="mailto:info@nalabuten.ah" class="page-panel__menu-item">info@nalabuten.ah</a>-->
+<!--            </li>-->
+<!--            <li class="page-panel__menu-list">-->
+<!--                <adress href="#" class="page-panel__menu-item">Адрес: г.Москва Фантаститечкий проезд д.234</adress>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <small class="page-panel__small">&copy; Nalabutena.ah 2019</small>-->
+<!--</footer>-->
+</body>
+</html>
