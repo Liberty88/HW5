@@ -16,7 +16,7 @@
             <li class="service-buttons__list">
                 <a class="service-buttons__link">
                     <svg class="service-buttons__icon" role="presentation">
-                        <use xlink:href="img/login.svg #login"></use>
+                        <use xlink:href="img/login.svg #login" class="service-buttons__use-element"></use>
                     </svg>
                     Вход
                 </a>
@@ -24,7 +24,7 @@
             <li class="service-buttons__list">
                 <a class="service-buttons__link">
                     <svg class="service-buttons__icon" role="presentation">
-                        <use xlink:href="img/heart.svg #heart"></use>
+                        <use xlink:href="img/heart.svg #heart" class="service-buttons__use-element"></use>
                     </svg>
                     Избранное
                 </a>
@@ -32,7 +32,7 @@
             <li class="service-buttons__list">
                 <a class="service-buttons__link">
                     <svg class="service-buttons__icon" role="presentation">
-                        <use xlink:href="img/compare.svg #compare"></use>
+                        <use xlink:href="img/compare.svg #compare" class="service-buttons__use-element"></use>
                     </svg>
                     Сравнение
                 </a>
@@ -43,21 +43,21 @@
             <li class="social-links__list">
                 <a href="#" class="social-links__link" title="vk">
                     <svg class="social-links__icon" role="presentation">
-                        <use xlink:href="img/vk.svg #vk"></use>
+                        <use xlink:href="img/vk.svg #vk" class="social-links__use-element"></use>
                     </svg>
                 </a>
             </li>
             <li class="social-links__list">
                 <a href="#" class="social-links__link" title="facebook">
                     <svg class="social-links__icon" role="presentation">
-                        <use xlink:href="img/facebook.svg #facebook"></use>
+                        <use xlink:href="img/facebook.svg #facebook" class="social-links__use-element"></use>
                     </svg>
                 </a>
             </li>
             <li class="social-links__list">
                 <a href="#" class="social-links__link" title="twitter">
                     <svg class="social-links__icon" role="presentation">
-                        <use xlink:href="img/twitter.svg #twitter"></use>
+                        <use xlink:href="img/twitter.svg #twitter" class="social-links__use-element"></use>
                     </svg>
                 </a>
             </li>
@@ -66,16 +66,22 @@
     <div class="header-content">
         <a href="/" class="page-panel__logo-link">
             <svg class="page-panel__logo" role="presentation">
-                <use xlink:href="img/Logo.svg #Logo"></use>
+                <use xlink:href="img/Logo1.svg #Logo" class="page-panel__use-element"></use>
             </svg>
         </a>
         <div class="header-center">
             <ul class="contacts-block">
                 <li class="contacts-block__list">
-                    <a href="tel:+88006845594" class="contacts-block__link">8 (800) 684-55-94</a>
+                    <a href="tel:+88006845594" class="contacts-block__link">
+                        <img src="img/phone.svg" alt="" class="contacts-block__icon">
+                        8 (800) 684-55-94
+                    </a>
                 </li>
                 <li class="contacts-block__list">
-                    <a href="mailto:info@nalabuten.ah" class="contacts-block__link">info@nalabuten.ah</a>
+                    <a href="mailto:info@nalabuten.ah" class="contacts-block__link">
+                        <img src="img/envelope.svg" alt="" class="contacts-block__icon">
+                        info@dm.ah
+                    </a>
                 </li>
             </ul>
             <form action="base.php" class="search-block">
@@ -84,8 +90,12 @@
             </form>
         </div>
         <div class="total-block">
-            <output class="total-block__total-price">7500р.</output>
-            <a href="#" class="total-block__buy-bottom" title="Перейти в корзину"></a>
+            <output class="total-block__total-price">5000р.</output>
+            <a href="#" class="total-block__buy-bottom" title="Перейти в корзину" data-count="4">
+                <svg class="total-block__cart" role="presentation">
+                    <use xlink:href="img/cart.svg #cart" class="total-block__use-element"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </header>
